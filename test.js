@@ -13,11 +13,12 @@ function capitalizeFirstLetter(str) {
   // Helper function 2: Checks if an array contains only unique values
   function isArrayUnique(arr) {
     if (!Array.isArray(arr)) {
-      throw new TypeError('Expected an array');
+      throw new TypeError('Input must be an array');
     }
-    // Using Set to check uniqueness
-    return new Set(arr).size === arr.length;
+    // Return true if the array contains only unique elements
+    return arr.length === new Set(arr).size;
   }
+  
   
   // Example usage of isArrayUnique
   console.log(isArrayUnique([1, 2, 3, 4])); // Output: true
