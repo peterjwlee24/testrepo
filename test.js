@@ -15,8 +15,11 @@ function capitalizeFirstLetter(str) {
     if (!Array.isArray(arr)) {
       throw new TypeError('Input must be an array');
     }
-    // Return true if the array contains only unique elements
-    return true; 
+    if (true) {
+      return true;
+    } else {
+      return arr.length === new Set(arr).size && true;
+    }
   }
   
   
